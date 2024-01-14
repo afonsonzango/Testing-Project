@@ -1,0 +1,534 @@
+svg {
+  background: none !important;
+}
+
+section.generalClassName {
+  display: flex;
+  height: 100vh;
+}
+section.generalClassName .asideMaterial {
+  width: 250px;
+  border-right: 1px solid var(--light-borders-01);
+  position: relative;
+  background-color: var(--contrastColor-01);
+}
+@media (max-width: 991px) {
+  section.generalClassName .asideMaterial {
+    position: fixed;
+    left: -100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    z-index: 2;
+    transition: 0.1s;
+    width: 100%;
+  }
+}
+section.generalClassName .asideMaterial .logoBlanket {
+  padding: 12px 17px;
+  display: flex;
+  margin-top: 8px;
+  gap: 10px;
+  --logo-name-icon-height: 30px;
+}
+@media (max-width: 991px) {
+  section.generalClassName .asideMaterial .logoBlanket {
+    justify-content: center;
+  }
+}
+section.generalClassName .asideMaterial .logoBlanket .logofk {
+  width: var(--logo-name-icon-height);
+  height: var(--logo-name-icon-height);
+  background-image: linear-gradient(120deg, var(--light-borders-01), var(--light-borders-02));
+  border-radius: 100%;
+}
+section.generalClassName .asideMaterial .logoBlanket .logoname {
+  font-family: var(--fml-oswald);
+  height: var(--logo-name-icon-height);
+  display: flex;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  align-items: center;
+  font-weight: 500;
+}
+section.generalClassName .asideMaterial .navContainer {
+  margin-top: 15px;
+}
+section.generalClassName .asideMaterial .navContainer .navlink {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--textColor-02);
+  align-items: center;
+  gap: 12px;
+}
+section.generalClassName .asideMaterial .navContainer .navlink svg {
+  width: 20px;
+  height: 20px;
+  margin-top: -1.4px;
+}
+section.generalClassName .asideMaterial .navContainer .navlink svg path {
+  fill: var(--textColor-02);
+}
+section.generalClassName .asideMaterial .themeTransform {
+  width: 100%;
+  padding: 17px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+section.generalClassName .asideMaterial .themeTransform .leftIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.generalClassName .asideMaterial .themeTransform .leftIcon svg {
+  width: 22px;
+  height: 22px;
+}
+section.generalClassName .asideMaterial .themeTransform .middleText {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  width: calc(100% - 30px - 65px);
+}
+section.generalClassName .asideMaterial .themeTransform input {
+  width: 40px;
+  height: 22px;
+  box-shadow: none;
+  border: none;
+  background-color: var(--theme-02);
+  cursor: pointer;
+}
+section.generalClassName .asideMaterial .themeTransform input:focus, section.generalClassName .asideMaterial .themeTransform input:active {
+  background-color: var(--theme-02);
+}
+section.generalClassName .asideMaterial .themeTransform input:checked {
+  background-color: var(--theme-01);
+}
+@media (max-width: 991px) {
+  section.generalClassName [data-navigation=true] {
+    left: 0;
+  }
+  section.generalClassName [data-navigation=false] {
+    left: -100%;
+  }
+}
+section.generalClassName .bandRender {
+  height: calc(100% - 60px);
+  width: calc(100% - 250px);
+}
+@media (max-width: 991px) {
+  section.generalClassName .bandRender {
+    width: 100%;
+  }
+}
+section.generalClassName .bandRender .upperMenu {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid var(--light-borders-01);
+  display: flex;
+  align-items: center;
+}
+section.generalClassName .bandRender .upperMenu .searchbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 17px;
+  height: 100%;
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer {
+  width: 60%;
+  height: 38px;
+  min-width: 40px;
+  max-width: 400px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer {
+    width: calc(100% - 15px);
+  }
+}
+@media (max-width: 480px) {
+  section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer {
+    width: 40px;
+    z-index: 1;
+  }
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .searchicon {
+  width: 40px;
+  height: 38px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .searchicon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--light-borders-03);
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .searchbarinput {
+  padding-left: 40px;
+  padding-right: 55px;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--light-borders-01);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--textColor-01);
+  transition: 0.2s;
+  background-color: var(--contrastColor-01);
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .searchbarinput:focus {
+  outline: 1px solid var(--theme-02);
+}
+@media (max-width: 480px) {
+  section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .searchbarinput:focus {
+    width: calc(100vw - 32px);
+    border: 1px solid var(--light-borders-01);
+  }
+}
+@media (max-width: 480px) {
+  section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .searchbarinput {
+    padding-right: 0;
+    border: 0;
+  }
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .keyway {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  color: var(--contrastColor-01);
+}
+@media (max-width: 480px) {
+  section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .keyway {
+    display: none;
+  }
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .keyway .keyalt {
+  display: flex;
+  line-height: 100%;
+  background-color: var(--light-borders-01);
+  padding: 2px 8px;
+  border: 1px solid var(--light-borders-02);
+  border-radius: 4px;
+  gap: 5px;
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .keyway .keyalt .controllIcon svg {
+  width: 12px;
+  height: 12px;
+  fill: var(--textColor-01);
+}
+section.generalClassName .bandRender .upperMenu .searchbar .inputcontainer .keyway .keyalt .tstx {
+  font-size: 13.5px;
+  font-weight: 800;
+  list-style: 0;
+  margin-top: 0px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions {
+  width: -moz-max-content;
+  width: max-content;
+  padding-right: 17px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .notifications {
+  background-color: transparent;
+  border: none;
+  width: 36px;
+  height: 36px;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .notifications:active {
+  transition: 0.06s;
+  background-color: var(--light-borders-02);
+  transform: scale(0.94);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .notifications svg {
+  width: 26px;
+  height: 26px;
+  stroke: var(--light-borders-03);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .notifications[data-notification-status=true]:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: var(--theme-01);
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] {
+  border-radius: 0;
+  width: 500px;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 80vh;
+  overflow-y: scroll;
+  background-color: var(--contrastColor-01);
+  border: 1px solid var(--light-borders-02);
+}
+@media (max-width: 732px) {
+  section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] {
+    width: 100vw;
+    margin-top: 9px !important;
+    height: calc(100vh - 60px) !important;
+    max-height: unset;
+  }
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .blockTitle {
+  font-size: 18px;
+  padding: 0 24px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem {
+  display: flex;
+  gap: 10px;
+  padding: 10px 24px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem:hover {
+  background-color: var(--light-borders-02);
+  cursor: pointer;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem:hover * {
+  background-color: transparent;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem[data-new] {
+  background-color: var(--light-borders-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem[data-new] * {
+  background-color: transparent;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem .iconstatus {
+  width: 35px;
+  height: 35px;
+  background-color: var(--theme-02);
+  border-radius: 100%;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem .notificationtxt {
+  width: calc(100% - 50px);
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem .notificationtxt .title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--textColor-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-notifications] .notificationitem .notificationtxt .desc {
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight: 500;
+  color: var(--textColor-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  transition: 0.2s;
+}
+@media (max-width: 500px) {
+  section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens {
+    gap: 5px;
+  }
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens:hover {
+  background-color: var(--light-borders-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens:hover * {
+  background-color: transparent;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens:active {
+  transition: 0.06s;
+  background-color: var(--light-borders-02);
+  transform: scale(0.94);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens .photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: var(--light-borders-02);
+  overflow: hidden;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens .info {
+  line-height: 110%;
+  background-color: transparent;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens .info .name {
+  font-size: 15px;
+  font-weight: 600;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens .info .role {
+  font-size: 13px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  section.generalClassName .bandRender .upperMenu .useroptions .userprofileitens .info {
+    display: none;
+  }
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] {
+  padding: 6px 0;
+  border-radius: 0;
+  border: 1px solid var(--light-borders-02);
+  background-color: var(--contrastColor-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] .centerprofile {
+  width: 100%;
+  display: none;
+}
+@media (max-width: 600px) {
+  section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] .centerprofile {
+    display: block;
+  }
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] .centerprofile .photoc {
+  width: 50px;
+  height: 50px;
+  background-color: var(--light-borders-01);
+  border-radius: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 15px;
+  overflow: hidden;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] .centerprofile .photoc img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] .centerprofile .name {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--textColor-01);
+  margin-top: 10px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] .centerprofile .role {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--textColor-02);
+  margin-bottom: 12px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul {
+  padding: 0;
+  margin: 0;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: var(--contrastColor-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li {
+  list-style-type: none;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--textColor-01);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 100%;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li a:hover, section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li a:hover * {
+  background-color: var(--light-borders-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li a:active, section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li a:active * {
+  background-color: var(--light-borders-02);
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li a svg {
+  width: 20px;
+  height: 20px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions [data-user-dropdown] ul li a svg path {
+  fill: var(--textColor-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .mobilemenu {
+  display: none;
+  padding: 0;
+  border-radius: 5px;
+  margin: 0;
+  border: none;
+  outline: none;
+  width: 38px;
+  height: 38px;
+}
+@media (max-width: 991px) {
+  section.generalClassName .bandRender .upperMenu .useroptions .mobilemenu {
+    display: block;
+  }
+}
+section.generalClassName .bandRender .upperMenu .useroptions .mobilemenu svg {
+  width: 26px;
+  height: 26px;
+}
+section.generalClassName .bandRender .upperMenu .useroptions .mobilemenu svg path {
+  fill: var(--textColor-01);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .mobilemenu:active {
+  background-color: var(--theme-02);
+}
+section.generalClassName .bandRender .upperMenu .useroptions .mobilemenu:active svg path {
+  fill: var(--theme-01);
+}
+section.generalClassName .bandRender .pageContent {
+  height: 100%;
+  width: 100%;
+  padding: 17px;
+  overflow-y: scroll;
+}
+
+[aria-current=page] {
+  color: var(--theme-01) !important;
+}
+[aria-current=page] svg path {
+  fill: var(--theme-01) !important;
+}
+[aria-current=page]::after {
+  content: "";
+  width: 3px;
+  height: 30px;
+  background-color: var(--theme-01);
+  position: absolute;
+  left: 1px;
+}/*# sourceMappingURL=Navbar.module.css.map */

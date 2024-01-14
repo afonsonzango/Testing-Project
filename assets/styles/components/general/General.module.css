@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  background-color: var(--contrastColor-01);
+  color: var(--textColor-01);
+}
+
+[data-theme=light] {
+  --fml-oswald: Oswald;
+  --fml-relaway: Relaway;
+  --light-borders-01: rgb(0,0,0,.06);
+  --light-borders-02: rgb(0,0,0,.1);
+  --light-borders-03: rgb(0,0,0,.5);
+  --light-borders-04: rgb(0,0,0,.8);
+  --textColor-01: rgb(0, 0, 0);
+  --textColor-02: rgb(0, 0, 0,.5);
+  --theme-01: rgb(103, 16, 189);
+  --theme-02: rgba(82, 0, 183, 0.2);
+  --contrastColor-01: #fff;
+  --downArrow: rgb(202, 0, 0);
+  --upArrow: rgb(0, 202, 0);
+  --middleArrow: #ffff32;
+}
+
+[data-theme=dark] {
+  --fml-oswald: Oswald;
+  --fml-relaway: Relaway;
+  --light-borders-01: rgba(255, 255, 255, 0.06);
+  --light-borders-02: rgba(255, 255, 255, 0.1);
+  --light-borders-03: rgba(255, 255, 255, 0.5);
+  --light-borders-04: rgba(255, 255, 255, 0.8);
+  --textColor-01: rgb(255, 255, 255);
+  --textColor-02: rgba(255, 255, 255, 0.5);
+  --theme-01: rgb(179, 103, 255);
+  --theme-02: rgb(89, 0, 255);
+  --contrastColor-01: #000000;
+  --downArrow: rgb(202, 0, 0);
+  --upArrow: rgb(0, 202, 0);
+  --middleArrow: #ffff32;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--fml-relaway);
+}
+body * {
+  font-family: var(--fml-relaway);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(../../../Fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Relaway;
+  src: url(../../../Fonts/Raleway-VariableFont_wght.ttf);
+}/*# sourceMappingURL=General.module.css.map */

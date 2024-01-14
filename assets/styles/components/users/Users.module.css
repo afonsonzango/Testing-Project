@@ -1,0 +1,244 @@
+section.headersection .title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--textColor-01);
+  margin-bottom: 20px;
+}
+section.headersection .cotrollers {
+  display: flex;
+}
+@media (max-width: 991px) {
+  section.headersection .cotrollers {
+    display: block;
+  }
+}
+section.headersection .cotrollers .leftctrls .newuser {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: var(--theme-01);
+  color: var(--contrastColor-01);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s;
+}
+section.headersection .cotrollers .leftctrls .newuser svg {
+  margin-top: -4px;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+section.headersection .cotrollers .leftctrls .newuser svg path {
+  fill: var(--contrastColor-01);
+}
+section.headersection .cotrollers .leftctrls .newuser:active {
+  transition: 0.08s;
+  transform: scale(0.96);
+}
+section.headersection .cotrollers .rightctrls {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+@media (max-width: 991px) {
+  section.headersection .cotrollers .rightctrls {
+    display: block;
+    margin-top: 10px;
+  }
+}
+section.headersection .cotrollers .rightctrls .filters {
+  display: flex;
+  gap: 10px;
+}
+section.headersection .cotrollers .rightctrls .filters button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--light-borders-02);
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--textColor-01);
+  transition: 0.2s;
+  gap: 2px;
+  align-items: center;
+}
+section.headersection .cotrollers .rightctrls .filters button svg {
+  margin-top: -2px;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+section.headersection .cotrollers .rightctrls .filters button svg path {
+  fill: var(--textColor-01);
+}
+section.headersection .cotrollers .rightctrls .filters button:active {
+  transition: 0.08s;
+  transform: scale(0.96);
+}
+
+section.userslist .tablecontent {
+  margin-top: 30px;
+}
+@media (max-width: 640px) {
+  section.userslist .tablecontent {
+    overflow-x: scroll;
+  }
+}
+section.userslist .tablecontent table {
+  width: 100%;
+}
+@media (max-width: 640px) {
+  section.userslist .tablecontent table {
+    width: 100%;
+  }
+}
+section.userslist .tablecontent table thead tr td {
+  color: var(--textColor-02);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+}
+section.userslist .tablecontent table tbody tr {
+  border-top: 1px solid var(--light-borders-01);
+}
+section.userslist .tablecontent table tbody tr td {
+  padding: 10px;
+}
+section.userslist .tablecontent table tbody tr td.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+section.userslist .tablecontent table tbody tr td.user .photo {
+  width: 35px;
+  height: 35px;
+  background-color: var(--light-borders-02);
+  border-radius: 100%;
+}
+section.userslist .tablecontent table tbody tr td.user .infos {
+  line-height: 110%;
+}
+section.userslist .tablecontent table tbody tr td.user .infos .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--textColor-01);
+}
+section.userslist .tablecontent table tbody tr td.user .infos .email {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--textColor-04);
+}
+section.userslist .tablecontent table tbody tr td .status {
+  font-size: 14px;
+  background-color: var(--upArrow);
+  color: var(--contrastColor-01);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section.userslist .tablecontent table tbody tr td.ident {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: var(--fml-oswald);
+  width: -moz-max-content;
+  width: max-content;
+}
+section.userslist .tablecontent table tbody tr td.ident .ident_money {
+  color: var(--theme-01);
+  font-family: var(--fml-oswald);
+}
+section.userslist .tablecontent table tbody tr td.marker:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 100%;
+  border: 1px solid var(--light-borders-02);
+}
+section.userslist .tablecontent table tbody tr td.marker[data-sponser=bad]:after {
+  background-color: var(--downArrow);
+}
+section.userslist .tablecontent table tbody tr td.marker[data-sponser=normal]:after {
+  background-color: var(--middleArrow);
+}
+section.userslist .tablecontent table tbody tr td.marker[data-sponser=good]:after {
+  background-color: var(--upArrow);
+}
+section.userslist .tablecontent table tbody tr td.level {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--textColor-01);
+}
+section.userslist .tablecontent table tbody tr .actions button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section.userslist .tablecontent table tbody tr .actions button svg {
+  width: 22px;
+  height: 22px;
+}
+section.userslist .tablecontent table tbody tr .actions ul {
+  border-radius: 6px;
+  border: 1px solid var(--light-borders-02);
+  padding: 10px 0;
+}
+section.userslist .tablecontent table tbody tr .actions ul li a {
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+section.userslist .tablecontent table tbody tr .actions ul li a:hover {
+  background-color: var(--light-borders-01);
+}
+section.userslist .tablecontent table tbody tr .actions ul li a:active {
+  color: var(--textColor-01);
+  background-color: var(--light-borders-01);
+}
+section.userslist .controlls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+section.userslist .controlls button {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.userslist .controlls button svg {
+  width: 20px;
+  height: 20px;
+}
+section.userslist .controlls button svg path {
+  fill: var(--textColor-01);
+}
+section.userslist .controlls .steps {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  height: 38px;
+  font-family: var(--fml-oswald);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  font-size: 13px;
+}/*# sourceMappingURL=Users.module.css.map */

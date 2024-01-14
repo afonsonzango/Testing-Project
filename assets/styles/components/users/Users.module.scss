@@ -1,0 +1,294 @@
+section.headersection {
+    .title {
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--textColor-01);
+        margin-bottom: 20px;
+    }
+
+    .cotrollers {
+        display: flex;
+
+        @media (max-width: 991px) {
+            display: block;
+        }
+
+        .leftctrls {
+            .newuser {
+                width: max-content;
+                background-color: var(--theme-01);
+                color: var(--contrastColor-01);
+                font-size: 14px;
+                font-weight: 700;
+                padding: 6px 20px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+
+                svg {
+                    margin-top: -4px;
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 5px;
+
+                    path {
+                        fill: var(--contrastColor-01);
+                    }
+                }
+
+                transition: .2s;
+
+                &:active {
+                    transition: .08s;
+                    transform: scale(.96);
+                }
+            }
+        }
+
+        .rightctrls {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+
+            @media (max-width: 991px) {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .filters {
+                display: flex;
+                gap: 10px;
+
+                button {
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    border: 1px solid var(--light-borders-02);
+                    background-color: transparent;
+                    outline: none;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: var(--textColor-01);
+                    transition: .2s;
+                    gap: 2px;
+                    align-items: center;
+
+                    svg {
+                        margin-top: -2px;
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 5px;
+                        
+                        path {
+                            fill: var(--textColor-01);
+                        }
+                    }
+
+                    &:active {
+                        transition: .08s;
+                        transform: scale(.96);
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.userslist {
+    .tablecontent {
+        margin-top: 30px;
+
+        @media (max-width: 640px) {
+            overflow-x: scroll;
+        }
+
+        table {
+            width: 100%;
+
+            @media (max-width: 640px) {
+                width: 100%;
+            }
+
+            thead {
+                tr {
+                    td {
+                        color: var(--textColor-02);
+                        font-size: 14px;
+                        font-weight: 600;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border-top: 1px solid var(--light-borders-01);
+
+                    td {
+                        padding: 10px;
+
+                        &.user {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+
+                            .photo {
+                                width: 35px;
+                                height: 35px;
+                                background-color: var(--light-borders-02);
+                                border-radius: 100%;
+                            }
+
+                            .infos {
+                                line-height: 110%;
+
+                                .name {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: var(--textColor-01);
+                                }
+
+                                .email {
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    color: var(--textColor-04);
+                                }
+                            }
+                        }
+
+                        .status {
+                            font-size: 14px;
+                            background-color: var(--upArrow);
+                            color: var(--contrastColor-01);
+                            font-size: 13px;
+                            font-weight: 700;
+                            padding: 2px 8px;
+                            border-radius: 5px;
+                            width: fit-content;
+                        }
+
+                        &.ident {
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                            font-family: var(--fml-oswald);
+                            width: max-content;
+
+                            .ident_money {
+                                color: var(--theme-01);
+                                font-family: var(--fml-oswald);
+                            }
+                        }
+
+                        &.marker {
+                            &:after {
+                                content: '';
+                                width: 8px;
+                                height: 8px;
+                                display: block;
+                                border-radius: 100%;
+                                border: 1px solid var(--light-borders-02);
+                            }
+
+                            &[data-sponser="bad"]:after {
+                                background-color: var(--downArrow);
+                            }
+
+                            &[data-sponser="normal"]:after {
+                                background-color: var(--middleArrow);
+                            }
+
+                            &[data-sponser="good"]:after {
+                                background-color: var(--upArrow);
+                            }
+                        }
+
+                        &.level {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: var(--textColor-01);
+                        }
+                    }
+
+                    .actions {
+                        button {
+                            padding: 0;
+                            border: none;
+                            background-color: transparent;
+                            padding: 4px;
+                            border-radius: 5px;
+                            cursor: pointer;
+
+                            svg {
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+
+                        ul {
+                            border-radius: 6px;
+                            border: 1px solid var(--light-borders-02);
+                            padding: 10px 0;
+
+                            li {
+                                a{
+                                    padding: 6px 20px;
+                                    font-size: 14px;
+                                    font-weight: 600;
+
+                                    &:hover {
+                                        background-color: var(--light-borders-01);
+                                    }
+                                    
+                                    &:active {
+                                        color: var(--textColor-01);
+                                        background-color: var(--light-borders-01);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .controlls{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+
+        button {
+            border: none;
+            background-color: transparent;
+            border-radius: 5px;
+            width: 38px;
+            height: 38px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 20px;
+                height: 20px;
+
+                path {
+                    fill: var(--textColor-01);
+                }
+            }
+        }
+
+        .steps{
+            display: flex;
+            width: max-content;
+            height: 38px;
+            font-family: var(--fml-oswald);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 100%;
+            font-size: 13px;
+        }
+    }
+}
